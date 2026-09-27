@@ -905,3 +905,13 @@ html {
     background: #38bdf8;
     color: #0f172a;
 }
+/* ===== Social Icon Hover Effect ===== */
+
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
+}
