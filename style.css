@@ -935,3 +935,19 @@ html {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(56, 189, 248, 0.25);
 }
+/* ===== Hero Subtitle Animation ===== */
+
+.hero-content h2 {
+    animation: subtitleReveal 1.5s ease-out 0.4s both;
+}
+
+@keyframes subtitleReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
