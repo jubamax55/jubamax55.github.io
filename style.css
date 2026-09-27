@@ -808,3 +808,13 @@ footer {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
 }
+/* ===== Profile Image Hover Effect ===== */
+
+.profile-card img {
+    transition: all 0.4s ease;
+}
+
+.profile-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+}
