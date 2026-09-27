@@ -967,3 +967,19 @@ html {
         transform: translateY(0);
     }
 }
+/* ===== Hero Buttons Entrance Animation ===== */
+
+.hero-buttons {
+    animation: buttonsReveal 1.5s ease-out 0.9s both;
+}
+
+@keyframes buttonsReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
