@@ -766,3 +766,20 @@ footer {
         transform: translateY(0);
     }
 }
+/* ===== Enhanced Hero Name Animation ===== */
+
+.hero-text h1 {
+    animation: nameReveal 1.5s ease-out forwards;
+}
+
+@keyframes nameReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
