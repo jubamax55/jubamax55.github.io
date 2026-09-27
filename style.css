@@ -785,8 +785,8 @@ footer {
 }
 /* ===== Subtle Hero Name Glow ===== */
 
-.hero-text h1 span {
-    animation: nameGlow 3s ease-in-out infinite alternate;
+.hero-content h1 span {
+    animation: nameGlow 2s ease-in-out infinite alternate;
 }
 
 @keyframes nameGlow {
@@ -795,6 +795,6 @@ footer {
     }
 
     to {
-        text-shadow: 0 0 18px rgba(56, 189, 248, 0.8);
+        text-shadow: 0 0 25px rgba(56, 189, 248, 1);
     }
 }
