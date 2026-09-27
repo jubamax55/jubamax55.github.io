@@ -728,3 +728,41 @@ footer {
     margin: 0 auto 25px;
     border: 4px solid #38bdf8;
 }
+
+/* ==============================
+   HERO ANIMATION
+   ============================== */
+
+.hero-content {
+    animation: heroContentFade 1s ease-out forwards;
+}
+
+.profile-card {
+    animation: heroCardFade 1.2s ease-out 0.2s forwards;
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+@keyframes heroContentFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroCardFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
