@@ -915,3 +915,13 @@ html {
     transform: translateY(-5px) scale(1.08);
     box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
 }
+/* ===== Profile Card Hover Effect ===== */
+
+.profile-card {
+    transition: all 0.35s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(56, 189, 248, 0.25);
+}
