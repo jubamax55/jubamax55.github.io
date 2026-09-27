@@ -876,3 +876,8 @@ footer {
     border-color: #38bdf8;
     box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
 }
+/* ===== Smooth Scrolling ===== */
+
+html {
+    scroll-behavior: smooth;
+}
