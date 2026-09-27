@@ -983,3 +983,14 @@ html {
         transform: translateY(0);
     }
 }
+/* ===== Navbar Link Hover Effect ===== */
+
+.navbar a {
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
