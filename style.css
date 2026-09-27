@@ -863,3 +863,16 @@ footer {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(56, 189, 248, 0.25);
 }
+/* ===== Contact Form Focus Effect ===== */
+
+.contact-form input,
+.contact-form textarea {
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+}
