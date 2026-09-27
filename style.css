@@ -798,3 +798,13 @@ footer {
         text-shadow: 0 0 25px rgba(56, 189, 248, 1);
     }
 }
+/* ===== Button Hover Animation ===== */
+
+.hero-buttons a {
+    transition: all 0.3s ease;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
+}
