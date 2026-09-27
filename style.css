@@ -994,3 +994,13 @@ html {
     transform: translateY(-2px);
     text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
 }
+/* ===== Section Heading Glow Effect ===== */
+
+.section h2 {
+    transition: all 0.3s ease;
+}
+
+.section h2:hover {
+    color: #38bdf8;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
