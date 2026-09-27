@@ -783,3 +783,18 @@ footer {
         transform: translateY(0);
     }
 }
+/* ===== Subtle Hero Name Glow ===== */
+
+.hero-text h1 span {
+    animation: nameGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes nameGlow {
+    from {
+        text-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+    }
+
+    to {
+        text-shadow: 0 0 18px rgba(56, 189, 248, 0.8);
+    }
+}
