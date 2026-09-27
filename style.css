@@ -899,3 +899,9 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #0ea5e9;
 }
+/* ===== Text Selection Effect ===== */
+
+::selection {
+    background: #38bdf8;
+    color: #0f172a;
+}
