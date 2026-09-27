@@ -925,3 +925,13 @@ html {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(56, 189, 248, 0.25);
 }
+/* ===== Education Card Hover Effect ===== */
+
+.education-card {
+    transition: all 0.35s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.25);
+}
