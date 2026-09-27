@@ -843,3 +843,13 @@ footer {
         transform: translateY(0);
     }
 }
+/* ===== Skills Card Hover Effect ===== */
+
+.skill-card {
+    transition: all 0.35s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.25);
+}
