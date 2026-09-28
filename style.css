@@ -1332,3 +1332,13 @@ footer:hover {
     transform: translateY(-4px);
     text-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
 }
+/* ===== Info Card Hover Effect ===== */
+
+.info-card {
+    transition: all 0.35s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.25);
+}
