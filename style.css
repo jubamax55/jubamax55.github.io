@@ -1463,3 +1463,36 @@ footer:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
 }
+/* ===== Footer Link Hover Effect ===== */
+
+.footer a {
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+/* ===== Section Heading Hover Effect ===== */
+
+.section h2 {
+    transition: all 0.3s ease;
+}
+
+.section h2:hover {
+    color: #38bdf8;
+    transform: translateY(-4px);
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.55);
+}
+/* ===== Small Title Hover Effect ===== */
+
+.small-title {
+    transition: all 0.3s ease;
+}
+
+.small-title:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
