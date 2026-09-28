@@ -1389,3 +1389,14 @@ footer:hover {
     transform: scale(1.03);
     text-shadow: 0 0 20px rgba(56, 189, 248, 0.55);
 }
+/* ===== Hero Subtitle Hover Effect ===== */
+
+.hero-content h2 {
+    transition: all 0.3s ease;
+}
+
+.hero-content h2:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}
