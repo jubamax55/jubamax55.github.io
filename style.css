@@ -1916,3 +1916,24 @@ footer:hover {
 .profile-card:hover img {
     transform: scale(1.16);
 }
+/* ===== Hero University Text ===== */
+
+.hero-container > p {
+    position: relative;
+    z-index: 5;
+
+    margin-top: -35px;
+    margin-left: 0;
+
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+}
+
+.hero-container > p:hover {
+    color: #38bdf8;
+    transform: translateX(4px);
+}
