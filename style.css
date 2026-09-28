@@ -1183,3 +1183,14 @@ body {
 .project-card:hover::before {
     left: 150%;
 }
+/* ===== Profile Card Glow Effect ===== */
+
+.profile-card {
+    transition: all 0.35s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(56, 189, 248, 0.25);
+    border-color: rgba(56, 189, 248, 0.5);
+}
