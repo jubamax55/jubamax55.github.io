@@ -1019,3 +1019,23 @@ html {
 .hero-buttons a:active {
     transform: scale(0.96);
 }
+/* ===== Background Glow Effect ===== */
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background: rgba(56, 189, 248, 0.06);
+    border-radius: 50%;
+    filter: blur(100px);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+}
