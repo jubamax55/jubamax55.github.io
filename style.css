@@ -1014,3 +1014,8 @@ html {
     transform: scale(1.02);
     text-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
 }
+/* ===== Button Click Effect ===== */
+
+.hero-buttons a:active {
+    transform: scale(0.96);
+}
