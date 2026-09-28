@@ -1400,3 +1400,14 @@ footer:hover {
     transform: translateY(-3px);
     text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
 }
+/* ===== Hero Description Hover Effect ===== */
+
+.hero-text {
+    transition: all 0.3s ease;
+}
+
+.hero-text:hover {
+    transform: translateY(-3px);
+    color: #e0f2fe;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.35);
+}
