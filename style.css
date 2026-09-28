@@ -1268,3 +1268,12 @@ body {
         box-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
     }
 }
+/* ===== Footer Glow Effect ===== */
+
+footer {
+    transition: all 0.3s ease;
+}
+
+footer:hover {
+    box-shadow: 0 -5px 25px rgba(56, 189, 248, 0.18);
+}
