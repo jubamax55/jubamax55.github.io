@@ -1353,3 +1353,29 @@ footer:hover {
     transform: scale(1.15);
     text-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
 }
+/* ===== Card Title Hover Effect ===== */
+
+.skill-card h3,
+.project-card h3,
+.info-card h3 {
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover h3,
+.project-card:hover h3,
+.info-card:hover h3 {
+    color: #38bdf8;
+    transform: translateY(-3px);
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.55);
+}
+/* ===== Navbar Link Hover Effect ===== */
+
+.navbar a {
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
