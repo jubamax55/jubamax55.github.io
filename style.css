@@ -1004,3 +1004,13 @@ html {
     color: #38bdf8;
     text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
 }
+/* ===== Hero Name Hover Effect ===== */
+
+.hero-content h1 {
+    transition: all 0.3s ease;
+}
+
+.hero-content h1:hover {
+    transform: scale(1.02);
+    text-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
+}
