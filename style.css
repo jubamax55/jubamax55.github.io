@@ -1379,3 +1379,13 @@ footer:hover {
     transform: translateY(-2px);
     text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
 }
+/* ===== Hero Heading Hover Effect ===== */
+
+.hero-content h1 {
+    transition: all 0.35s ease;
+}
+
+.hero-content h1:hover {
+    transform: scale(1.03);
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.55);
+}
