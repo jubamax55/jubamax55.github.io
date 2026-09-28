@@ -1277,3 +1277,13 @@ footer {
 footer:hover {
     box-shadow: 0 -5px 25px rgba(56, 189, 248, 0.18);
 }
+/* ===== Contact Button Glow Effect ===== */
+
+.contact-form button {
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
+}
