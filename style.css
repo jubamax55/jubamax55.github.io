@@ -1411,3 +1411,35 @@ footer:hover {
     color: #e0f2fe;
     text-shadow: 0 0 10px rgba(56, 189, 248, 0.35);
 }
+/* ===== Profile Image Advanced Hover Effect ===== */
+
+.profile-card img {
+    transition: all 0.4s ease;
+}
+
+.profile-card img:hover {
+    transform: scale(1.06) rotate(1deg);
+    box-shadow: 0 0 35px rgba(56, 189, 248, 0.55);
+}
+/* ===== Hero Button Shine Effect ===== */
+
+.hero-buttons a {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-buttons a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.18);
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+}
+
+.hero-buttons a:hover::before {
+    left: 120%;
+}
