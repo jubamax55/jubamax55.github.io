@@ -1511,3 +1511,18 @@ footer:hover {
         box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
     }
 }
+/* ===== Profile Image Glow Animation ===== */
+
+.profile-card img {
+    animation: imageGlow 3s ease-in-out infinite;
+}
+
+@keyframes imageGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 0 35px rgba(56, 189, 248, 0.65);
+    }
+}
