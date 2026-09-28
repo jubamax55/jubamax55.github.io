@@ -1557,3 +1557,21 @@ footer:hover {
     border-radius: 25px;
     display: block;
 }
+/* ===== Make Profile Image Fill Entire Card ===== */
+
+.profile-card {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.profile-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
