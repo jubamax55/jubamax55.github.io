@@ -1496,3 +1496,18 @@ footer:hover {
     transform: translateX(5px);
     text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
 }
+/* ===== Button Pulse Effect ===== */
+
+.hero-buttons a:first-child {
+    animation: buttonPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes buttonPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(56, 189, 248, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+    }
+}
