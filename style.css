@@ -1937,3 +1937,39 @@ footer:hover {
     color: #38bdf8;
     transform: translateX(4px);
 }
+/* ===== Hero Social Links ===== */
+
+.hero-social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.hero-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 16px;
+
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    border-radius: 6px;
+
+    color: #94a3b8;
+    background: rgba(15, 23, 42, 0.45);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.hero-social-links a:hover {
+    color: #38bdf8;
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
+}
