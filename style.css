@@ -1575,3 +1575,123 @@ footer:hover {
     object-fit: cover;
     border-radius: 25px;
 }
+/* ===== Full Screen Hero Profile Image ===== */
+
+.hero {
+    position: relative;
+    min-height: 650px;
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+/* Make profile image cover right side */
+.profile-card {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    
+    padding: 0;
+    margin: 0;
+    
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    
+    overflow: hidden;
+    
+    opacity: 1;
+    transform: none;
+    animation: none;
+}
+
+/* Large full image */
+.profile-card img {
+    position: absolute;
+    inset: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+    
+    margin: 0;
+    
+    animation: none;
+    transition: transform 0.5s ease;
+}
+
+/* Hide profile card text */
+.profile-card h2,
+.profile-card p {
+    display: none;
+}
+
+/* Dark gradient from left to right */
+.profile-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        #06101d 0%,
+        rgba(6, 16, 29, 0.75) 12%,
+        rgba(6, 16, 29, 0.25) 35%,
+        transparent 60%
+    );
+    pointer-events: none;
+}
+
+/* Image hover */
+.profile-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.profile-card:hover img {
+    transform: scale(1.03);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .profile-card {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .profile-card img {
+        position: absolute;
+    }
+}
