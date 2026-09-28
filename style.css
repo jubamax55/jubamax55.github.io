@@ -1906,3 +1906,13 @@ footer:hover {
     }
 
 }
+/* ===== Hero Photo Final Adjustment ===== */
+
+.profile-card img {
+    object-position: center 55%;
+    transform: scale(1.12);
+}
+
+.profile-card:hover img {
+    transform: scale(1.16);
+}
