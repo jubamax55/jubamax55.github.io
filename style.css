@@ -1108,3 +1108,34 @@ body {
     transform: translateY(-4px);
     box-shadow: 0 8px 22px rgba(56, 189, 248, 0.35);
 }
+/* ===== Contact Input Hover Effect ===== */
+
+.contact-form input,
+.contact-form textarea {
+    transition: all 0.3s ease;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: rgba(56, 189, 248, 0.6);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.15);
+}
+/* ===== Section Heading Underline Effect ===== */
+
+.section h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 50px;
+    height: 3px;
+    background: #38bdf8;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
