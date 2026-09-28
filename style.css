@@ -1152,3 +1152,34 @@ body {
     border-color: rgba(56, 189, 248, 0.7);
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
 }
+/* ===== Card Shine Effect ===== */
+
+.skill-card,
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card::before,
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.12),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.skill-card:hover::before,
+.project-card:hover::before {
+    left: 150%;
+}
