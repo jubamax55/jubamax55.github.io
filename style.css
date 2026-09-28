@@ -1575,86 +1575,94 @@ footer:hover {
     object-fit: cover;
     border-radius: 25px;
 }
-/* ===== Full Screen Hero Profile Image ===== */
+/* ===== Full Width Hero Profile Image ===== */
 
 .hero {
     position: relative;
-    min-height: 650px;
+    min-height: calc(100vh - 80px);
     overflow: hidden;
 }
 
+/* Keep main content centered */
 .hero-container {
-    position: relative;
-    min-height: 650px;
-    display: flex;
-    align-items: center;
+    position: static;
+    min-height: calc(100vh - 80px);
+    display: block;
 }
 
+/* Left side text */
 .hero-content {
     width: 50%;
     position: relative;
-    z-index: 3;
+    z-index: 5;
+    padding-top: 90px;
 }
 
-/* Make profile image cover right side */
+/* Large right-side profile image */
 .profile-card {
     position: absolute;
-    right: 0;
     top: 0;
-    width: 50%;
+    right: 0;
+
+    width: 50vw;
     height: 100%;
-    
+
     padding: 0;
     margin: 0;
-    
+
     border: none;
     border-radius: 0;
     background: transparent;
     box-shadow: none;
-    
+
     overflow: hidden;
-    
+
     opacity: 1;
     transform: none;
     animation: none;
 }
 
-/* Large full image */
+/* Image fills entire right side */
 .profile-card img {
     position: absolute;
     inset: 0;
-    
+
     width: 100%;
     height: 100%;
-    
+
     object-fit: cover;
-    border-radius: 0;
+    object-position: center;
+
     border: none;
-    
+    border-radius: 0 !important;
     margin: 0;
-    
+
     animation: none;
     transition: transform 0.5s ease;
 }
 
-/* Hide profile card text */
+/* Hide old profile card text */
 .profile-card h2,
 .profile-card p {
     display: none;
 }
 
-/* Dark gradient from left to right */
+/* Dark gradient blending image with text */
 .profile-card::after {
     content: "";
     position: absolute;
     inset: 0;
+
     background: linear-gradient(
         to right,
         #06101d 0%,
-        rgba(6, 16, 29, 0.75) 12%,
-        rgba(6, 16, 29, 0.25) 35%,
-        transparent 60%
+        rgba(6, 16, 29, 0.95) 8%,
+        rgba(6, 16, 29, 0.70) 20%,
+        rgba(6, 16, 29, 0.25) 38%,
+        rgba(6, 16, 29, 0.05) 55%,
+        transparent 70%
     );
+
     pointer-events: none;
 }
 
@@ -1670,28 +1678,41 @@ footer:hover {
 
 /* Mobile */
 @media (max-width: 900px) {
+
     .hero {
         min-height: auto;
     }
 
     .hero-container {
         min-height: auto;
-        display: flex;
-        flex-direction: column;
+        display: block;
     }
 
     .hero-content {
         width: 100%;
+        padding-top: 60px;
     }
 
     .profile-card {
         position: relative;
+
         width: 100%;
         height: 500px;
-        margin-top: 40px;
+
+        margin-top: 50px;
     }
 
     .profile-card img {
         position: absolute;
     }
+
+    .profile-card::after {
+        background: linear-gradient(
+            to bottom,
+            #06101d 0%,
+            rgba(6, 16, 29, 0.15) 45%,
+            transparent 75%
+        );
+    }
 }
+
