@@ -1995,3 +1995,17 @@ footer:hover {
     padding: 9px 16px !important;
     white-space: nowrap;
 }
+/* ===== Final Fix for Hero University Text ===== */
+
+.hero-container > p {
+    display: block !important;
+    position: relative !important;
+    z-index: 5 !important;
+
+    margin-top: 70px !important;
+    margin-left: 0 !important;
+
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    transform: none !important;
+}
