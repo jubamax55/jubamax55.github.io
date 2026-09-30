@@ -608,3 +608,44 @@ window.addEventListener(
 
     }
 );
+/* Scroll To Top Button */
+
+.scroll-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 46px;
+    height: 46px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid var(--border-primary);
+    border-radius: 50%;
+
+    background: rgba(6, 16, 31, 0.9);
+    color: var(--primary);
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition: 0.3s ease;
+
+    z-index: 999;
+}
+
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    background: var(--primary);
+    color: #03101a;
+    transform: translateY(-4px);
+}
