@@ -1815,7 +1815,7 @@ footer:hover {
     justify-content: center;
 
     border: 1px solid #244463;
-    border-radius: 50%;
+    border-radius: 12px;
 
     color: #cbd5e1;
     text-decoration: none;
