@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nowshad Jubayer Tafif | Portfolio</title>
+    <title>Nowshad Jubayer Tafif | Software Engineering Student</title>
 
+    <meta
+        name="description"
+        content="Portfolio of Nowshad Jubayer Tafif, a Software Engineering student and Frontend / Java Developer."
+    >
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
-    <header class="navbar">
+    <header class="navbar" id="navbar">
 
         <div class="container nav-container">
 
@@ -22,13 +36,24 @@
                 Nowshad<span>.</span>
             </a>
 
-            <nav>
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
+
             </nav>
 
         </div>
@@ -36,412 +61,1080 @@
     </header>
 
 
-    <!-- ================= HOME ================= -->
+    <main>
 
-    <section id="home" class="hero">
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
 
-        <div class="container hero-container">
+        <section class="hero" id="home">
 
-            <div class="hero-content">
+            <div class="container hero-container">
 
-                <p class="small-title">Hello, I'm</p>
+                <div class="hero-content">
 
-                <h1>
-                <h1>
-    Nowshad <span>Jubayer Tafif</span>
-</h1>
-                </h1>
-
-                <h2>
-                    Student & Aspiring Web Developer
-                </h2>
-
-                <p class="hero-text">
-                    Welcome to my personal portfolio website.
-                    I love learning new technologies, creating creative
-                    projects, and improving my skills.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#projects" class="btn primary-btn">
-                        View My Projects
-                    </a>
-
-                    <a href="#contact" class="btn secondary-btn">
-                        Contact Me
-                    </a>
-</div>
-                
-            <!-- Hero Social Links -->
-<div class="hero-social-links">
-
-    <a href="https://github.com/jubamax55" target="_blank" aria-label="GitHub">
-    <i class="fa-brands fa-github"></i>
-</a>
-
-<a href="https://www.linkedin.com/in/noushad-jubayer-tafif-a48422415" target="_blank" aria-label="LinkedIn">
-    <i class="fa-brands fa-linkedin-in"></i>
-</a>
-
-<a href="https://www.facebook.com/nowshad.zubayer" target="_blank" aria-label="Facebook">
-    <i class="fa-brands fa-facebook-f"></i>
-</a>
-
-</div> 
-</div>
-
-
-            <div class="profile-card">
-
-    <img src="profile.jpg" alt="Nowshad Jubayer Tafil" class="profile-image">
-    <h2>Nowshad Jubayer Tafif</h2>
-
-    <p>Software Engineering Student</p>
-
-</div>
-<p>
-    Daffodil International University
-</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="section">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <p>GET TO KNOW ME</p>
-
-                <h2>About Me</h2>
-
-            </div>
-
-
-            <div class="about-content">
-
-                <div class="about-text">
-
-                    <h3>Who am I?</h3>
-
-                    <p>
-                        I am Nowshad Jubayer Tafif, a university student
-                        with a strong interest in technology and web
-                        development.
+                    <p class="small-title">
+                        Hello, I'm
                     </p>
 
-                    <p>
-                        I enjoy learning new technologies, developing
-                        creative ideas, and working on different
-                        academic and personal projects.
+                    <h1>
+                        Nowshad <span>Jubayer Tafif</span>
+                    </h1>
+
+                    <h2>
+                        Software Engineering Student &amp;
+                        Frontend / Java Developer
+                    </h2>
+
+                    <p class="hero-text">
+                        Software Engineering student with hands-on experience
+                        in Java, C, HTML, CSS, JavaScript, and SQL. I enjoy
+                        building functional, structured, and refined digital
+                        experiences while continuously improving my skills.
                     </p>
 
-                    <p>
-                        My goal is to continuously improve my technical
-                        skills and become a professional web developer
-                        in the future.
-                    </p>
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn primary-btn">
+                            <span>Explore My Work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn secondary-btn">
+                            <span>Contact Me</span>
+                        </a>
+
+                        <a
+                            href="resume.pdf"
+                            class="btn resume-btn"
+                            download
+                        >
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download Resume</span>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Social Links -->
+
+                    <div class="hero-social-links">
+
+                        <a
+                            href="https://github.com/jubamax55"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/noushad-jubayer-tafif-a48422415/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/nowshad.zubayer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a
+                            href="mailto:jubamax55@gmail.com"
+                            aria-label="Email"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+
+                    </div>
 
                 </div>
 
 
-                <div class="about-box">
+                <!-- Profile -->
 
-                    <div class="info-item">
-    <strong>Name</strong>
-    <span>Nowshad Jubayer Tafif</span>
-</div>
+                <div class="profile-card">
 
-<div class="info-item">
-    <strong>University</strong>
-    <span>Daffodil International University</span>
-</div>
+                    <div class="profile-image-wrapper">
 
-<div class="info-item">
-    <strong>Department</strong>
-    <span>Software Engineering</span>
-</div>
+                        <img
+                            src="profile.jpg"
+                            alt="Nowshad Jubayer Tafif"
+                            class="profile-image"
+                        >
 
-<div class="info-item">
-    <strong>Semester</strong>
-    <span>Second Semester</span>
-</div>
+                    </div>
+
+                    <div class="profile-card-content">
+
+                        <h3>
+                            Nowshad Jubayer Tafif
+                        </h3>
+
+                        <p>
+                            Software Engineering Student
+                        </p>
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Satkhira, Khulna, Bangladesh
+                        </span>
+
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= EDUCATION ================= -->
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
 
-    <section id="education" class="section dark-section">
+        <section class="section" id="about">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="section-title">
+                <div class="section-title">
 
-                <p>MY ACADEMIC JOURNEY</p>
+                    <p>GET TO KNOW ME</p>
 
-                <h2>Education</h2>
+                    <h2>About Me</h2>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <div class="about-text">
+
+                        <span class="section-label">
+                            WHO I AM
+                        </span>
+
+                        <h3>
+                            Building skills today for the developer
+                            I want to become tomorrow.
+                        </h3>
+
+                        <p>
+                            I am Nowshad Jubayer Tafif, a Software Engineering
+                            student with a strong interest in frontend
+                            development, Java programming, UI/UX design,
+                            and system-level thinking.
+                        </p>
+
+                        <p>
+                            I enjoy learning new technologies and turning
+                            ideas into functional, well-structured digital
+                            experiences. My goal is to continuously improve
+                            my technical skills while building meaningful
+                            projects.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-box">
+
+                        <div class="info-item">
+
+                            <strong>Name</strong>
+
+                            <span>
+                                Nowshad Jubayer Tafif
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <strong>University</strong>
+
+                            <span>
+                                Daffodil International University
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <strong>Department</strong>
+
+                            <span>
+                                Software Engineering
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <strong>Current Level</strong>
+
+                            <span>
+                                B.Sc. in Software Engineering
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <strong>Focus</strong>
+
+                            <span>
+                                Frontend &amp; Java Development
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="education-card">
 
-                <div class="education-icon">
-                    🎓
+        <!-- =====================================================
+             EDUCATION
+        ====================================================== -->
+
+        <section class="section dark-section" id="education">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>MY ACADEMIC JOURNEY</p>
+
+                    <h2>Education</h2>
+
                 </div>
 
-                <div>
 
-                    <span class="education-year">
-                        Present
-                    </span>
+                <div class="timeline">
+
+
+                    <!-- University -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Present
+                            </span>
+
+                            <h3>
+                                Daffodil International University
+                            </h3>
+
+                            <h4>
+                                B.Sc. in Software Engineering
+                            </h4>
+
+                            <p>
+                                Software Engineering student developing
+                                knowledge in programming, web development,
+                                software engineering, and modern technologies.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HSC -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Higher Secondary
+                            </span>
+
+                            <h3>
+                                Shimanta Adarsha College
+                            </h3>
+
+                            <h4>
+                                Higher Secondary Certificate — Science
+                            </h4>
+
+                            <p>
+                                Completed Higher Secondary education in the
+                                Science Group.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SSC -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Secondary
+                            </span>
+
+                            <h3>
+                                Satkhira Public School and College
+                            </h3>
+
+                            <h4>
+                                Secondary School Certificate — Science
+                            </h4>
+
+                            <p>
+                                Completed Secondary education in the
+                                Science Group.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SKILLS
+        ====================================================== -->
+
+        <section class="section" id="skills">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>WHAT I KNOW</p>
+
+                    <h2>My Skills</h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <!-- HTML -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+
+                        <h3>HTML5</h3>
+
+                        <p>
+                            Building structured and semantic web pages.
+                        </p>
+
+                    </div>
+
+
+                    <!-- CSS -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+
+                        <h3>CSS3</h3>
+
+                        <p>
+                            Creating modern, responsive and polished
+                            website designs.
+                        </p>
+
+                    </div>
+
+
+                    <!-- JavaScript -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Adding interaction and functionality to
+                            web experiences.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Bootstrap -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+
+                        <h3>Bootstrap</h3>
+
+                        <p>
+                            Creating responsive layouts and reusable
+                            interface components.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Java -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+
+                        <h3>Java</h3>
+
+                        <p>
+                            Developing structured applications and
+                            strengthening programming fundamentals.
+                        </p>
+
+                    </div>
+
+
+                    <!-- C -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>C Programming</h3>
+
+                        <p>
+                            Building programming fundamentals through
+                            logical problem solving.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SQL -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <h3>SQL</h3>
+
+                        <p>
+                            Working with structured data and database
+                            concepts.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Git -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+
+                        <h3>Git &amp; GitHub</h3>
+
+                        <p>
+                            Managing projects and maintaining development
+                            workflows.
+                        </p>
+
+                    </div>
+
+
+                    <!-- UI/UX -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+
+                        <h3>UI/UX Design</h3>
+
+                        <p>
+                            Designing clean and user-focused interfaces.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Communication -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <h3>Communication</h3>
+
+                        <p>
+                            Clear communication, teamwork and
+                            collaborative thinking.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Languages -->
+
+                <div class="languages-box">
+
+                    <div class="language-item">
+
+                        <span>
+                            Bengali
+                        </span>
+
+                        <strong>
+                            Native
+                        </strong>
+
+                    </div>
+
+
+                    <div class="language-item">
+
+                        <span>
+                            English
+                        </span>
+
+                        <strong>
+                            Professional
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+        <section class="section dark-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>WHAT I'VE BUILT</p>
+
+                    <h2>Featured Projects</h2>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- Project 01 -->
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                01
+                            </span>
+
+                            <i class="fa-solid fa-heart-pulse project-icon"></i>
+
+                        </div>
+
+                        <h3>
+                            Healthcare Management System
+                        </h3>
+
+                        <p>
+                            Built a complete Healthcare Management System
+                            for hospital administration, covering patient
+                            records, doctor schedules, and appointment
+                            booking modules with conflict-safe scheduling
+                            logic.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 02 -->
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                02
+                            </span>
+
+                            <i class="fa-solid fa-cloud-sun project-icon"></i>
+
+                        </div>
+
+                        <h3>
+                            Weather App
+                        </h3>
+
+                        <p>
+                            A clean weather lookup tool showing current
+                            conditions and forecasts, built with a weather
+                            API and vanilla JavaScript.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 03 -->
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                03
+                            </span>
+
+                            <i class="fa-solid fa-gamepad project-icon"></i>
+
+                        </div>
+
+                        <h3>
+                            Number Guessing Game
+                        </h3>
+
+                        <p>
+                            A browser-based game where the player guesses
+                            a randomly generated number with live feedback
+                            and a move counter.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 04 -->
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                04
+                            </span>
+
+                            <i class="fa-solid fa-calculator project-icon"></i>
+
+                        </div>
+
+                        <h3>
+                            Calculator
+                        </h3>
+
+                        <p>
+                            A responsive calculator with keyboard support
+                            and clean button-press animations, built
+                            entirely in vanilla JavaScript.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 05 -->
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                05
+                            </span>
+
+                            <i class="fa-solid fa-globe project-icon"></i>
+
+                        </div>
+
+                        <h3>
+                            Portfolio Website
+                        </h3>
+
+                        <p>
+                            A responsive personal portfolio built from
+                            scratch with semantic HTML, custom CSS and
+                            vanilla JavaScript to showcase skills,
+                            projects and personal information.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             STRENGTHS
+        ====================================================== -->
+
+        <section class="section" id="strengths">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>WHAT I BRING</p>
+
+                    <h2>My Strengths</h2>
+
+                </div>
+
+
+                <div class="strengths-grid">
+
+
+                    <div class="strength-card">
+
+                        <div class="strength-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>
+                            Clean, Maintainable Code
+                        </h3>
+
+                        <p>
+                            Writing readable, consistent and easy-to-extend
+                            code.
+                        </p>
+
+                    </div>
+
+
+                    <div class="strength-card">
+
+                        <div class="strength-icon">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+
+                        <h3>
+                            Continuous Learning
+                        </h3>
+
+                        <p>
+                            Combining formal coursework with independent
+                            learning and practice.
+                        </p>
+
+                    </div>
+
+
+                    <div class="strength-card">
+
+                        <div class="strength-icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <h3>
+                            System-Level Thinking
+                        </h3>
+
+                        <p>
+                            Thinking from database structure through
+                            interface design.
+                        </p>
+
+                    </div>
+
+
+                    <div class="strength-card">
+
+                        <div class="strength-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <h3>
+                            Clear Communication
+                        </h3>
+
+                        <p>
+                            Visible progress, early questions and
+                            steady alignment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CERTIFICATES & ACHIEVEMENTS
+        ====================================================== -->
+
+        <section class="section dark-section" id="certificates">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>LEARNING &amp; GROWTH</p>
+
+                    <h2>Certificates &amp; Achievements</h2>
+
+                </div>
+
+
+                <div class="empty-state-card">
+
+                    <div class="empty-state-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
 
                     <h3>
-                        Daffodil International University
+                        More achievements coming soon
                     </h3>
 
-                    <h4>
-    B.Sc. in Software Engineering
-</h4>
-
-<p>
-    Second Semester Student at Daffodil International University.
-    I am developing my knowledge in software engineering,
-    programming, web development, and modern technologies.
-</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills" class="section">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <p>WHAT I KNOW</p>
-
-                <h2>My Skills</h2>
-
-            </div>
-
-
-            <div class="skills-grid">
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        HTML
-                    </div>
-
-                    <h3>HTML</h3>
-
                     <p>
-                        Building structured and semantic web pages.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        CSS
-                    </div>
-
-                    <h3>CSS</h3>
-
-                    <p>
-                        Creating modern and responsive website designs.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        JS
-                    </div>
-
-                    <h3>JavaScript</h3>
-
-                    <p>
-                        Adding interaction and functionality to websites.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        PPT
-                    </div>
-
-                    <h3>Microsoft PowerPoint</h3>
-
-                    <p>
-                        Creating creative presentations and visual content.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        COM
-                    </div>
-
-                    <h3>Communication</h3>
-
-                    <p>
-                        Effective communication and teamwork skills.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        💡
-                    </div>
-
-                    <h3>Problem Solving</h3>
-
-                    <p>
-                        Learning to solve problems through logical thinking.
+                        This section is ready for certificates,
+                        competitions, workshops, academic achievements,
+                        and other milestones as they are added.
                     </p>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= PROJECTS ================= -->
+        <!-- =====================================================
+             ACTIVITIES
+        ====================================================== -->
 
-    <section id="projects" class="section dark-section">
+        <section class="section" id="activities">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="section-title">
+                <div class="section-title">
 
-                <p>WHAT I'VE BUILT</p>
+                    <p>BEYOND THE CLASSROOM</p>
 
-                <h2>My Projects</h2>
+                    <h2>Activities &amp; Experience</h2>
 
-            </div>
-
-
-            <div class="projects-grid">
+                </div>
 
 
-                <div class="project-card">
+                <div class="empty-state-card">
 
-                    <div class="project-number">
-                        01
+                    <div class="empty-state-icon">
+                        <i class="fa-solid fa-people-group"></i>
                     </div>
 
                     <h3>
-                        Personal Portfolio Website
+                        More experiences coming soon
                     </h3>
 
                     <p>
-                        A modern personal portfolio website created
-                        using HTML, CSS and JavaScript to showcase
-                        my skills, education and projects.
+                        University activities, workshops, volunteering,
+                        clubs, events and professional experiences can
+                        be added here as your journey grows.
                     </p>
 
-                    <div class="project-tags">
+                </div>
 
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+            </div>
 
-                    </div>
+        </section>
+
+
+        <!-- =====================================================
+             INTERESTS
+        ====================================================== -->
+
+        <section class="section dark-section" id="interests">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>WHAT I ENJOY EXPLORING</p>
+
+                    <h2>Interests</h2>
 
                 </div>
 
 
-                <div class="project-card">
+                <div class="interests-grid">
 
-                    <div class="project-number">
-                        02
-                    </div>
 
-                    <h3>
-                        University Presentation
-                    </h3>
+                    <div class="interest-card">
 
-                    <p>
-                        A creative academic presentation project
-                        about Daffodil International University,
-                        its campus, education and student life.
-                    </p>
+                        <i class="fa-solid fa-layer-group"></i>
 
-                    <div class="project-tags">
-
-                        <span>PowerPoint</span>
-                        <span>Design</span>
-                        <span>Research</span>
+                        <h3>
+                            Full-Stack Development
+                        </h3>
 
                     </div>
 
-                </div>
 
+                    <div class="interest-card">
 
-                <div class="project-card">
+                        <i class="fa-solid fa-pen-ruler"></i>
 
-                    <div class="project-number">
-                        03
+                        <h3>
+                            UI/UX Design
+                        </h3>
+
                     </div>
 
-                    <h3>
-                        Future Web Project
-                    </h3>
 
-                    <p>
-                        A future project where I will apply my
-                        programming and web development knowledge
-                        to create a useful digital solution.
-                    </p>
+                    <div class="interest-card">
 
-                    <div class="project-tags">
+                        <i class="fa-solid fa-sitemap"></i>
 
-                        <span>Web</span>
-                        <span>Development</span>
-                        <span>Learning</span>
+                        <h3>
+                            System Architecture
+                        </h3>
+
+                    </div>
+
+
+                    <div class="interest-card">
+
+                        <i class="fa-solid fa-plane"></i>
+
+                        <h3>
+                            Travelling &amp; Adventure
+                        </h3>
+
+                    </div>
+
+
+                    <div class="interest-card">
+
+                        <i class="fa-solid fa-film"></i>
+
+                        <h3>
+                            English Movies
+                        </h3>
+
+                    </div>
+
+
+                    <div class="interest-card">
+
+                        <i class="fa-solid fa-clover"></i>
+
+                        <h3>
+                            Playing Cards
+                        </h3>
 
                     </div>
 
@@ -449,91 +1142,321 @@
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= CONTACT ================= -->
+        <!-- =====================================================
+             FAQ
+        ====================================================== -->
 
-    <section id="contact" class="section">
+        <section class="section" id="faq">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="section-title">
+                <div class="section-title">
 
-                <p>GET IN TOUCH</p>
+                    <p>COMMON QUESTIONS</p>
 
-                <h2>Contact Me</h2>
+                    <h2>FAQ</h2>
+
+                </div>
+
+
+                <div class="faq-list">
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            Who is Nowshad Jubayer Tafif?
+                        </summary>
+
+                        <p>
+                            Nowshad Jubayer Tafif is a Software Engineering
+                            student interested in frontend development,
+                            Java programming, UI/UX design and system
+                            architecture.
+                        </p>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What are you currently studying?
+                        </summary>
+
+                        <p>
+                            I am studying B.Sc. in Software Engineering
+                            at Daffodil International University.
+                        </p>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What technologies do you work with?
+                        </summary>
+
+                        <p>
+                            My current technical skills include HTML5,
+                            CSS3, JavaScript, Bootstrap, Java, C,
+                            SQL, Git and GitHub.
+                        </p>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            What type of projects do you build?
+                        </summary>
+
+                        <p>
+                            I work on web applications, frontend projects,
+                            programming projects and academic software
+                            projects.
+                        </p>
+
+                    </details>
+
+
+                    <details class="faq-item">
+
+                        <summary>
+                            How can I contact you?
+                        </summary>
+
+                        <p>
+                            You can contact me through email or connect
+                            with me through my social profiles below.
+                        </p>
+
+                    </details>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="contact-box">
 
-                <h3>
-                    Let's connect!
-                </h3>
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>LET'S CONNECT</p>
+
+                    <h2>Contact Me</h2>
+
+                </div>
+
+
+                <div class="contact-box">
+
+                    <div class="contact-content">
+
+                        <span class="section-label">
+                            GET IN TOUCH
+                        </span>
+
+                        <h3>
+                            Have an idea, project or opportunity?
+                        </h3>
+
+                        <p>
+                            Feel free to reach out if you want to discuss
+                            a project, collaboration, learning opportunity,
+                            or simply connect.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-info">
+
+
+                        <a
+                            href="mailto:jubamax55@gmail.com"
+                            class="contact-item"
+                        >
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <div>
+
+                                <strong>
+                                    Email
+                                </strong>
+
+                                <span>
+                                    jubamax55@gmail.com
+                                </span>
+
+                            </div>
+
+                        </a>
+
+
+                        <a
+                            href="https://github.com/jubamax55"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-item"
+                        >
+
+                            <i class="fa-brands fa-github"></i>
+
+                            <div>
+
+                                <strong>
+                                    GitHub
+                                </strong>
+
+                                <span>
+                                    github.com/jubamax55
+                                </span>
+
+                            </div>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/in/noushad-jubayer-tafif-a48422415/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-item"
+                        >
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                            <div>
+
+                                <strong>
+                                    LinkedIn
+                                </strong>
+
+                                <span>
+                                    Connect on LinkedIn
+                                </span>
+
+                            </div>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.facebook.com/nowshad.zubayer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-item"
+                        >
+
+                            <i class="fa-brands fa-facebook"></i>
+
+                            <div>
+
+                                <strong>
+                                    Facebook
+                                </strong>
+
+                                <span>
+                                    facebook.com/nowshad.zubayer
+                                </span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    Nowshad<span>.</span>
+                </a>
 
                 <p>
-                    If you want to discuss a project, collaboration
-                    or simply want to say hello, feel free to contact me.
+                    Software Engineering Student &amp;
+                    Frontend / Java Developer
                 </p>
 
-
-                <div class="contact-info">
-
-                    <div>
-                        <strong>Email</strong>
-                        <p>jubamax55@gmail.com</p>
-                    </div>
-
-                    <div>
-                        <strong>University</strong>
-                        <p>Daffodil International University</p>
-                    </div>
-
-                </div>
+            </div>
 
 
-                <div class="social-links">
+            <div class="footer-socials">
 
-  <a href="https://www.facebook.com/nowshad.zubayer" target="_blank" aria-label="Facebook">
-    <i class="fa-brands fa-facebook-f"></i>
-</a>
+                <a
+                    href="https://github.com/jubamax55"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
 
-<a href="https://wa.me/8801612424050" class="social-link" target="_blank" aria-label="WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
+                <a
+                    href="https://www.linkedin.com/in/noushad-jubayer-tafif-a48422415/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
 
-<a href="https://t.me/nowshadzubayer" class="social-link" target="_blank" aria-label="Telegram">
-    <i class="fa-brands fa-telegram"></i>
-</a>
+                <a
+                    href="https://www.facebook.com/nowshad.zubayer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
 
-<a href="https://www.linkedin.com/in/noushad-jubayer-tafif-a48422415" class="social-link" target="_blank" aria-label="LinkedIn">
-    <i class="fa-brands fa-linkedin-in"></i>
-</a>
-
-<a href="https://github.com/jubamax55" class="social-link" target="_blank" aria-label="GitHub">
-    <i class="fa-brands fa-github"></i>
-</a>
-</div>
+                <a
+                    href="mailto:jubamax55@gmail.com"
+                    aria-label="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
 
             </div>
 
         </div>
 
-    </section>
 
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="container">
+        <div class="footer-bottom">
 
             <p>
-                © 2026 Nowshad Jubayer Tafif. All Rights Reserved.
+                &copy; 2026 Nowshad Jubayer Tafif. All rights reserved.
             </p>
 
         </div>
@@ -541,7 +1464,9 @@
     </footer>
 
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
