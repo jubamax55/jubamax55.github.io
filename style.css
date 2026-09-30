@@ -1973,3 +1973,25 @@ footer:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
 }
+/* ===== Fix Hero Bottom Text & Social Links ===== */
+
+.hero-social-links {
+    position: relative;
+    z-index: 10;
+    margin-top: 28px;
+}
+
+.hero-container > p {
+    position: relative;
+    z-index: 5;
+    margin-top: 25px !important;
+    margin-left: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.5;
+}
+
+.hero-social-links a {
+    font-size: 13px !important;
+    padding: 9px 16px !important;
+    white-space: nowrap;
+}
