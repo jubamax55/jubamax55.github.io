@@ -1026,13 +1026,167 @@ ul {
 
 .projects-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 22px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
 }
 
+.project-card {
+    position: relative;
+    min-height: 350px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18, 42, 70, 0.95),
+            rgba(8, 25, 45, 0.95)
+        );
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.20);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+/* Decorative glow */
+.project-card::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 174, 255, 0.12);
+
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 174, 255, 0.45);
+
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.30),
+        0 0 25px rgba(0, 174, 255, 0.08);
+}
+
+.project-card:hover::before {
+    transform: scale(1.4);
+}
+
+.project-top {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+.project-number {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.55;
+}
+
+.project-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(0, 174, 255, 0.10);
+    border: 1px solid rgba(0, 174, 255, 0.20);
+
+    color: #00aeff;
+    font-size: 19px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+    transform: rotate(-6deg) scale(1.08);
+    background: rgba(0, 174, 255, 0.18);
+}
+
+.project-card h3 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 0 16px;
+
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.project-card p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    opacity: 0.68;
+}
+
+.project-tags {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: auto;
+    padding-top: 28px;
+}
+
+.project-tags span {
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #00aeff;
+
+    background: rgba(0, 174, 255, 0.08);
+    border: 1px solid rgba(0, 174, 255, 0.20);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.project-tags span:hover {
+    background: rgba(0, 174, 255, 0.16);
+    transform: translateY(-2px);
+}
 
 .project-card {
     position: relative;
