@@ -2719,3 +2719,21 @@ body:not(:has(.hero)) {
     }
 
 }
+/* Hide contact labels */
+.contact-item strong {
+    display: none;
+}
+
+/* Keep contact icon and information nicely aligned */
+.contact-item {
+    align-items: center;
+}
+
+.contact-item div {
+    display: block;
+}
+
+.contact-item span {
+    font-size: 1rem;
+    font-weight: 500;
+}
