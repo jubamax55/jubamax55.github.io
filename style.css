@@ -2737,3 +2737,20 @@ body:not(:has(.hero)) {
     font-size: 1rem;
     font-weight: 500;
 }
+/* =========================================
+   CONTACT - HIDE LABELS
+========================================= */
+
+.contact-item strong {
+    display: none !important;
+}
+
+.contact-item div {
+    display: block !important;
+}
+
+.contact-item span {
+    display: block;
+    color: var(--text);
+    font-size: 0.95rem;
+}
