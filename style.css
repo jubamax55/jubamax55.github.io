@@ -3002,3 +3002,314 @@ body {
     height: 220px;
   }
 }
+/* =====================================================
+   MODERN HOME / HERO DESIGN
+===================================================== */
+
+.modern-hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.modern-hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.10);
+    filter: blur(80px);
+    top: -120px;
+    right: -100px;
+    pointer-events: none;
+}
+
+.modern-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.08);
+    filter: blur(70px);
+    bottom: -120px;
+    left: -100px;
+    pointer-events: none;
+}
+
+
+/* HERO CONTAINER */
+
+.modern-hero .hero-container {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* BADGE */
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 15px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #6366f1;
+    background: rgba(99, 102, 241, 0.07);
+}
+
+.hero-badge i {
+    font-size: 13px;
+}
+
+
+/* HELLO */
+
+.modern-hero .small-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* NAME */
+
+.modern-hero h1 {
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.05;
+    margin-bottom: 18px;
+    letter-spacing: -2px;
+}
+
+.modern-hero h1 span {
+    display: block;
+}
+
+
+/* TITLE */
+
+.modern-hero h2 {
+    font-size: clamp(21px, 2.3vw, 30px);
+    line-height: 1.3;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+
+/* DESCRIPTION */
+
+.modern-hero .hero-text {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+
+/* BUTTONS */
+
+.modern-hero .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-bottom: 30px;
+}
+
+.modern-hero .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 13px 21px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.modern-hero .btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* SOCIAL */
+
+.modern-hero .hero-social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.modern-hero .hero-social-links a {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.modern-hero .hero-social-links a:hover {
+    transform: translateY(-4px);
+}
+
+
+/* PROFILE CARD */
+
+.modern-profile-card {
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 18px;
+    transition: transform 0.4s ease;
+}
+
+.modern-profile-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* IMAGE */
+
+.modern-profile-card .profile-image-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 4.5;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.modern-profile-card .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.modern-profile-card:hover .profile-image {
+    transform: scale(1.04);
+}
+
+
+/* PROFILE INFO */
+
+.modern-profile-card .profile-card-content {
+    padding: 20px 8px 8px;
+}
+
+.modern-profile-card h3 {
+    font-size: 22px;
+    margin: 10px 0 6px;
+}
+
+.modern-profile-card p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.modern-profile-card .profile-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+
+/* STATUS */
+
+.profile-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.profile-status i {
+    font-size: 7px;
+}
+
+
+/* =====================================================
+   RESPONSIVE HOME
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .modern-hero .hero-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .modern-hero .hero-content {
+        text-align: center;
+    }
+
+    .modern-hero .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modern-hero .hero-buttons {
+        justify-content: center;
+    }
+
+    .modern-hero .hero-social-links {
+        justify-content: center;
+    }
+
+    .modern-profile-card {
+        max-width: 390px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .modern-hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .modern-hero h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .modern-hero h2 {
+        font-size: 21px;
+    }
+
+    .modern-hero .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .modern-hero .btn {
+        width: 100%;
+    }
+
+    .modern-profile-card {
+        padding: 12px;
+    }
+
+}
