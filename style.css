@@ -2814,3 +2814,28 @@ body:not(:has(.hero)) {
     }
 
 }
+/* ===== MODERN PORTFOLIO THEME ===== */
+
+:root {
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+
+  --bg: #0b0c10;
+  --bg-secondary: #10141c;
+  --card: #111827;
+
+  --text: #e7e7e7;
+  --text-soft: #a7b0bd;
+  --border: #1f2937;
+
+  --transition: 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
