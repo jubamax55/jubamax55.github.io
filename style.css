@@ -4376,3 +4376,249 @@ footer {
     }
 }
 ```
+
+/* ===== FRIEND-INSPIRED HOMEPAGE ===== */
+
+.friend-style-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  background: #080808;
+  color: #f5f5f5;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.friend-style-hero * {
+  box-sizing: border-box;
+}
+
+.friend-hero-photo {
+  position: absolute;
+  z-index: -2;
+  inset: 0 0 0 25%;
+  background-image: url("profile.jpg");
+  background-size: cover;
+  background-position: center 25%;
+  opacity: .88;
+}
+
+.friend-hero-overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #080808 0%, #080808 24%,
+      rgba(8,8,8,.86) 40%, rgba(8,8,8,.12) 100%),
+    linear-gradient(0deg, #080808 0%, transparent 45%);
+}
+
+.friend-hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 22px clamp(20px, 5vw, 70px);
+}
+
+.friend-hero-logo {
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.friend-hero-logo span {
+  color: #3975ff;
+}
+
+.friend-hero-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  padding: 7px;
+  border: 1px solid #ffffff1a;
+  border-radius: 40px;
+  background: #252525b8;
+  backdrop-filter: blur(14px);
+}
+
+.friend-hero-menu a {
+  padding: 12px 15px;
+  color: #f5f5f5;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+  transition: background .2s ease;
+}
+
+.friend-hero-menu a:hover,
+.friend-hero-menu a.selected {
+  background: #2864f0;
+}
+
+.friend-hero-content {
+  max-width: 950px;
+  padding: clamp(65px, 7vw, 105px) 25px 110px
+    clamp(22px, 2.4vw, 40px);
+}
+
+.friend-hero-intro {
+  margin: 0 0 18px;
+  color: #b3c5ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.friend-hero-content h1 {
+  margin: 0;
+  color: #f3f3f3;
+  font-size: clamp(55px, 8.1vw, 120px);
+  font-weight: 950;
+  line-height: .9;
+  letter-spacing: -.065em;
+}
+
+.friend-hero-role {
+  margin: 34px 0 12px;
+  color: #e4dfe0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(27px, 3vw, 39px);
+  font-style: italic;
+  line-height: 1.12;
+}
+
+.friend-hero-tagline {
+  margin: 20px 0 28px;
+  color: #999;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.friend-hero-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.friend-hero-socials a {
+  color: #c4c4c4;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.friend-hero-socials a:hover {
+  color: #8eacff;
+}
+
+.friend-hero-resume {
+  display: inline-block;
+  padding: 14px 17px;
+  border: 1px solid #ffffff30;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: background .2s ease;
+}
+
+.friend-hero-resume:hover {
+  background: #2864f0;
+}
+
+.friend-hero-footer {
+  position: absolute;
+  bottom: 25px;
+  left: clamp(22px, 2.4vw, 40px);
+  color: #777;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .friend-hero-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .friend-hero-menu {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border-radius: 18px;
+  }
+
+  .friend-hero-menu a {
+    flex: 0 0 auto;
+    padding: 11px 13px;
+  }
+
+  .friend-hero-photo {
+    inset: 120px 0 0 10%;
+    background-position: center top;
+    opacity: .58;
+  }
+
+  .friend-hero-overlay {
+    background:
+      linear-gradient(90deg, #080808 0%, #08080855 100%),
+      linear-gradient(0deg, #080808 0%, transparent 75%);
+  }
+
+  .friend-hero-content {
+    padding: 65px 22px 105px;
+  }
+}
+
+@media (max-width: 480px) {
+  .friend-hero-menu {
+    width: 100%;
+  }
+
+  .friend-hero-menu a {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .friend-hero-photo {
+    inset: 145px 0 0;
+    background-position: 58% top;
+    opacity: .43;
+  }
+
+  .friend-hero-content {
+    padding: 65px 18px 105px;
+  }
+
+  .friend-hero-content h1 {
+    font-size: clamp(46px, 12vw, 64px);
+  }
+
+  .friend-hero-role {
+    font-size: 27px;
+  }
+
+  .friend-hero-tagline {
+    max-width: 290px;
+    line-height: 1.8;
+    letter-spacing: 1.2px;
+  }
+
+  .friend-hero-footer {
+    left: 18px;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}
