@@ -1,5 +1,5 @@
 /* =========================================================
-   NOWSHAD JUBAYER TAFIF — PORTFOLIO JAVASCRIPT
+   NOUSHAD JUBAYER TAFIF — PORTFOLIO JAVASCRIPT
 ========================================================= */
 
 
