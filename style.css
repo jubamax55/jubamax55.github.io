@@ -2266,7 +2266,7 @@ summary:focus-visible {
 
 /* Page spacing because navbar is fixed */
 
-body:not(:has(.hero)) {
+body:not(:has(.hero, .friend-style-hero)) {
     padding-top: 78px;
 }
 
